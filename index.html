@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Roboto:wght@300&family=Yantramanav:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="main">
+       <div class="section">
+            <h1>Mondrian</h1>
+            <p>Hi! I am Rattin Sadman and this is Mondrian.Piet Mondrian was a Dutch Painter and theoretician who is regarded as one of the greatest artists of 20th century.Here we can randmoly generate, make changes and play around with some of his greatest works.Have Fun!</p>
+            <div class="controls">
+                <i class="fas fa-save save"></i>
+                <i class="fas  fa-play-circle play"></i>
+            </div>
+            <div class="options">
+                <label for="paintings"><i class="fas fa-image">
+                    </i>
+                </label>
+                <label for="adjust"><i class="fas fa-sliders-h">
+                    </i>
+                </label>
+                <label for="color"><i class="fas fa-palette"></i>
+                </label>
+           </div>
+           <div class="section2 toggle">
+               <div class="catalogue">
+                <div class="img composition">
+                    <img src="img/composition.jpg" alt="composition-with-red-blue-and-yellow-1930" class="composition1">
+                    <span>Composition With Red Blue and Yellow (1930) by Piet Mondrian</span>
+                </div>
+                <div class="img broadway">
+                    <img src="img/broadway.jpg" alt="broadway-boogie-woogie-1943" class="boogie">
+                    <span>Broadway Boogie Woogie(1943) by Piet Mondrian</span>
+                </div>
+                <div class="img city">
+                    <img src="img/newyork.jpg" alt="new-york-city-i-1942" class="new-york">
+                    <span>New york City(1942) by Piet Mondrian</span>
+                </div>  
+                <div class="img inColor">
+                    <img src="img/incolor.jpg" alt="incolorComposition">
+                    <span>In Color(1917) by Piet Mondrian</span>
+                </div>  
+                <div class="img minima">
+                    <img src="img/minima.png" alt="incolorComposition">
+                    <span>Minima</span>
+                </div>   
+               </div>
+           </div>
+           <div class="section3 toggle">
+                <div class="adjust">
+                    <div class="sliders">
+                    <div class="slider1">
+                        <input type="range" min="0" max="50000"  class="slider-1">
+                    </div>
+                    <div class="slider2">
+                        <input type="range" min="0" max="100" class="slider-2">
+                    </div>
+                    <div class="slider3">
+                        <input type="range" min="0" max="100"  class="slider-3">
+                    </div>
+                    <div class="slider4">
+                        <input type="range" min="0" max="100"  class="slider-4">
+                    </div>
+                 </div>
+                </div>
+             </div>
+             <div class="section4 toggle">
+                <div class="color-picker">
+                    <div class="radio-buttons">
+                        <input type="radio" class="randomize" name="radio-b">
+                        <label for="randomize">Random Colors</label>
+                        <input type="radio" class="original" name="radio-b">
+                        <label for="original">Original Pallete</label>
+                        <input type="radio" class="custom" name="radio-b">
+                        <label for="custom">Choose Custom Pallete</label>
+                    </div>
+                    <div class="picker toggle">
+                        <div class="slots">
+                           <div class="s">
+                                <input type="color">
+                                <span>Color 1</span>
+                            </div>
+                            <div class="s">
+                                    <input type="color">
+                                    <span>Color 2</span>
+                            </div>
+                            <div class="s">
+                                    <input type="color">
+                                    <span>Color 3</span>
+                            </div>
+                            <div class="s">
+                                   <input type="color">
+                                    <span>Color 4</span>
+                            </div>
+                            <div class="c">
+                                <input type="color">
+                                <span>Canvas Color</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="canvas-container" id="container" >
+       </div>
+   </div>
+<script src="app.js"></script>
+</body>
+</html>
