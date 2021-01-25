@@ -3,11 +3,11 @@ body{
     background-image: linear-gradient(to bottom right,#0922ec,#ff0024,#00ffd4);
 }
 .main{
+
     display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
-    overflow:hidden;
 }
 .section h1{
     font-family: 'Playfair Display', serif;
