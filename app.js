@@ -293,3 +293,4 @@ function clear_palette(){
         custom_pallete = [];
     }
 }
+
